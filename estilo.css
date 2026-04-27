@@ -1,0 +1,389 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BASE */
+body {
+    background-color: #262626;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+p {
+    font-family: inherit;
+}
+
+/* TOPO */
+.topo {
+    height: 60px;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 3px solid #f26b2b;
+}
+
+.topo img,
+.logo-topo {
+    width: 100px;
+}
+
+/* HOME */
+.banner {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* SERVIÇOS HOME */
+.titulo-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 10px;
+}
+
+.caixa-servico_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: #f26b2b solid 1px;
+    border-bottom: #f26b2b solid 1px;
+    padding: 15px 0;
+    margin: 20px;
+}
+
+.caixa-servico_home>div {
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-servico_home p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+    max-width: 110px;
+}
+
+.caixa-servico_home p img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.caixa-esquerda {
+    border-left: 0.5px solid #fff;
+    border-right: 0.5px solid #fff;
+}
+
+.caixa-direita {
+    border-right: 0.5px solid #fff;
+}
+
+/* SOBRE NÓS HOME */
+.sobrenos-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobrenos-home img {
+    width: 250px;
+    margin: 20px 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.text_sobrenos {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 3.5px solid #6E07DC;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.text_sobrenos button {
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f26b2b;
+    color: #fff;
+}
+
+/* PLANOS */
+.caixa-planos_home {
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.caixa-planos_home h2 {
+    text-align: center;
+}
+
+.planos {
+    display: flex;
+    gap: 50px;
+    padding: 15px;
+    font-size: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.planos::-webkit-scrollbar {
+    display: none;
+}
+
+.planos h3 {
+    font-size: 25px;
+}
+
+.planos img {
+    width: 150px;
+    border-bottom: 1px solid #929292;
+}
+
+.planos button {
+    border: none;
+    border-radius: 10px;
+    background-color: #929292;
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 14px;
+}
+
+.plano_basico,
+.plano_avancado,
+.plano_premium {
+    min-width: 75%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 0.8px solid #8d8d8d;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    scroll-snap-align: center;
+}
+
+.plano_avancado h3 {
+    color: #6E07DC;
+}
+
+.plano_premium h3 {
+    color: #f26b2b;
+}
+
+/* BAIXO / APP */
+.baixo {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    border: 3px solid #6E07DC;
+    border-radius: 200px;
+}
+
+.baixe_app img {
+    width: 250px;
+    padding: 15px;
+}
+
+.roxo {
+    color: #9747ff;
+}
+
+.laranja {
+    color: #f26807;
+}
+
+/* MENU DESKTOP */
+#menu {
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+#menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-toggle,
+.close-menu {
+    display: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #262626;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #menu ul li a {
+        font-size: 22px;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #menu.active {
+        right: 0;
+    }
+}
+
+@media (min-width: 500px) {
+    .sobrenos-home img {
+        width: 300px;
+    }
+
+    .text_sobrenos {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .baixe_app img {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .caixa-servico_home {
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .caixa-servico_home>div {
+        width: 150px;
+        text-align: center;
+        border-left: 1px solid #fff;
+    }
+
+    .planos {
+        justify-content: center;
+        overflow-x: visible;
+        gap: 20px;
+    }
+
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        min-width: auto;
+        width: 190px;
+    }
+
+    .sobrenos-home {
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        max-width: 1000px;
+        margin: 40px auto;
+        flex-direction: row;
+    }
+
+    .sobrenos-home img {
+        width: 360px;
+    }
+
+    .text_sobrenos {
+        width: 290px;
+        font-size: 17px;
+        padding: 18px;
+    }
+
+    .text_sobrenos button {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .baixo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        gap: 50px;
+    }
+}
+@media(min-width:1000px) {
+    .caixa-servico_home{
+        
+        width: 90%;
+    }
+     .caixa-servico_home>div {
+        width: 20%;
+        
+   }
+   .caixa-servico_home p{
+    font-size: 15px;
+   }
+   .caixa-servico_home p img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+    
+}
