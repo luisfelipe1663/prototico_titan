@@ -601,3 +601,40 @@ a{
         transform: translateX(0);
     }
 }
+/* ANIMAÇÃO PLANOS */
+.plano_basico,
+.plano_avancado,
+.plano_premium {
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: all 0.8s ease;
+}
+
+/* quando ativa */
+.plano_basico.animar {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.plano_avancado.animar {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+.plano_premium.animar {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+/* mobile mais suave */
+@media (max-width: 500px) {
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        transform: translateY(-40px);
+    }
+}
+

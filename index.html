@@ -149,26 +149,7 @@
             </p>
         </div>
     </footer>
-    <script>
-    function toggleMenu() {
-        document.getElementById("menu").classList.toggle("active");
-    }
-
-    const sobreNos = document.querySelector(".sobrenos-home");
-
-    const observerSobre = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                sobreNos.classList.add("animar");
-            }
-        });
-    }, {
-        threshold: 0.3
-    });
-
-    if (sobreNos) {
-        observerSobre.observe(sobreNos);
-    }
+    <script src="interação.js">
 </script>
 </body>
 </html>
