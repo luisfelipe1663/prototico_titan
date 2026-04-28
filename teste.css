@@ -13,6 +13,11 @@ body {
 h2,
 p {
     font-family: inherit;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
 
 /* TOPO */
