@@ -243,6 +243,7 @@ a{
     color: white;
     text-decoration: none;
     font-size: 16px;
+    padding: 10px;
 }
 
 .menu-toggle,
@@ -559,4 +560,44 @@ a{
 /* 🔥 ÚNICA ALTERAÇÃO */
 .btn-plano {
     display: none !important;
+}
+/* ANIMAÇÃO SOBRE NÓS */
+.sobrenos-home > img,
+.text_sobrenos {
+    opacity: 0;
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* imagem entra da esquerda */
+.sobrenos-home > img {
+    transform: translateX(-80px);
+}
+
+/* texto entra da direita */
+.text_sobrenos {
+    transform: translateX(80px);
+    transition-delay: 0.3s;
+}
+
+/* quando aparecer na tela */
+.sobrenos-home.animar > img,
+.sobrenos-home.animar .text_sobrenos {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* responsivo: mesma animação, só mais suave */
+@media (max-width: 500px) {
+    .sobrenos-home > img {
+        transform: translateX(-45px);
+    }
+
+    .text_sobrenos {
+        transform: translateX(45px);
+    }
+
+    .sobrenos-home.animar > img,
+    .sobrenos-home.animar .text_sobrenos {
+        transform: translateX(0);
+    }
 }

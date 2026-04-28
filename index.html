@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Titan Fit</title>
-    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
@@ -149,5 +149,26 @@
             </p>
         </div>
     </footer>
+    <script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+    }
+
+    const sobreNos = document.querySelector(".sobrenos-home");
+
+    const observerSobre = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                sobreNos.classList.add("animar");
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    if (sobreNos) {
+        observerSobre.observe(sobreNos);
+    }
+</script>
 </body>
 </html>
