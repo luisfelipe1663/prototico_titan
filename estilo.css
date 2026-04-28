@@ -19,213 +19,7 @@ a{
     text-decoration: none;
     color: #fff;
 }
-
-/* TOPO */
-.topo {
-    height: 60px;
-    background-color: #262626;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    border-bottom: 3px solid #f26b2b;
-}
-
-.topo img,
-.logo-topo {
-    width: 100px;
-}
-
-/* HOME */
-.banner {
-    width: 100%;
-    margin-top: 20px;
-}
-
-/* SERVIÇOS HOME */
-.titulo-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin: 10px;
-}
-
-.caixa-servico_home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-top: #f26b2b solid 1px;
-    border-bottom: #f26b2b solid 1px;
-    padding: 15px 0;
-    margin: 20px;
-}
-
-.caixa-servico_home>div {
-    min-height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caixa-servico_home p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    text-align: center;
-    font-size: 12px;
-    color: #fff;
-    padding: 10px;
-    max-width: 110px;
-}
-
-.caixa-servico_home p img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-}
-
-.caixa-esquerda {
-    border-left: 0.5px solid #fff;
-    border-right: 0.5px solid #fff;
-}
-
-.caixa-direita {
-    border-right: 0.5px solid #fff;
-}
-
-/* SOBRE NÓS HOME */
-.sobrenos-home {
-    display: flex;
-    flex-direction: column;
-}
-
-.sobrenos-home img {
-    width: 250px;
-    margin: 20px 0;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-.text_sobrenos {
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-left: 3.5px solid #6E07DC;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.text_sobrenos button {
-    margin-top: 5px;
-    padding: 5px;
-    border: none;
-    border-radius: 10px;
-    background-color: #f26b2b;
-    color: #fff;
-}
-
-/* PLANOS */
-.caixa-planos_home {
-    background-color: #fff;
-    margin-top: 50px;
-    padding: 20px 0;
-}
-
-.caixa-planos_home h2 {
-    text-align: center;
-}
-
-.planos {
-    display: flex;
-    gap: 50px;
-    padding: 15px;
-    font-size: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.planos::-webkit-scrollbar {
-    display: none;
-}
-
-.planos h3 {
-    font-size: 25px;
-}
-
-.planos img {
-    width: 150px;
-    border-bottom: 1px solid #929292;
-}
-
-.planos button {
-    border: none;
-    border-radius: 10px;
-    background-color: #929292;
-    font-size: 15px;
-    color: #fff;
-    padding: 8px 14px;
-}
-
-.plano_basico,
-.plano_avancado,
-.plano_premium {
-    min-width: 75%;
-    height: 300px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    border: 0.8px solid #8d8d8d;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    scroll-snap-align: center;
-}
-
-.plano_avancado h3 {
-    color: #6E07DC;
-}
-
-.plano_premium h3 {
-    color: #f26b2b;
-}
-
-/* BAIXO / APP */
-.baixo {
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo img {
-    width: 150px;
-    height: 150px;
-    padding: 50px;
-    border: 3px solid #6E07DC;
-    border-radius: 200px;
-}
-
-.baixe_app img {
-    width: 250px;
-    padding: 15px;
-}
-
-.roxo {
-    color: #9747ff;
-}
-
-.laranja {
-    color: #f26807;
-}
-
-/* MENU DESKTOP */
+/* ----------------------MENU DESKTOP----------------------------------- */
 #menu {
     position: static;
     width: auto;
@@ -298,168 +92,203 @@ a{
         right: 0;
     }
 }
-
-@media (min-width: 500px) {
-    .sobrenos-home img {
-        width: 300px;
-    }
-
-    .text_sobrenos {
-        padding: 15px;
-        font-size: 15px;
-    }
-
-    .baixe_app img {
-        margin-top: 10px;
-    }
+/* TOPO */
+.topo {
+    height: 60px;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 3px solid #f26b2b;
 }
 
-@media (min-width: 700px) {
-    .caixa-servico_home {
-        width: 700px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-    }
-
-    .caixa-servico_home>div {
-        width: 150px;
-        text-align: center;
-        border-left: 1px solid #fff;
-    }
-
-    .planos {
-        justify-content: center;
-        overflow-x: visible;
-        gap: 20px;
-    }
-
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        min-width: auto;
-        width: 190px;
-    }
-
-    .sobrenos-home {
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        max-width: 1000px;
-        margin: 40px auto;
-        flex-direction: row;
-    }
-
-    .sobrenos-home img {
-        width: 360px;
-    }
-
-    .text_sobrenos {
-        width: 290px;
-        font-size: 17px;
-        padding: 18px;
-    }
-
-    .text_sobrenos button {
-        font-size: 15px;
-        margin-top: 10px;
-    }
-
-    .baixo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 90px;
-        gap: 90px;
-    }
+.topo img {
+    width: 100px;
 }
 
-@media(min-width:1000px) {
-    .caixa-servico_home {
-        width: 90%;
-    }
+/* HOME */
+.banner {
+    width: 100%;
+    margin-top: 20px;
+}
 
-    .caixa-servico_home>div {
-        width: 20%;
-    }
+/* ---------------------------SERVIÇOS HOME------------------------------------------------ */.roxo {
+    color: #9747ff;
+}
+.titulo-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 10px;
+}
 
-    .caixa-servico_home p {
-        font-size: 15px;
-    }
+.caixa-servico_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: #f26b2b solid 1px;
+    border-bottom: #f26b2b solid 1px;
+    padding: 15px 0;
+    margin: 20px;
+}
 
-    .caixa-servico_home p img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-    }
+.caixa-servico_home>div {
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .caixa-planos_home {
-        padding: 100px;
-        margin-top: -5px
-    }
-    .caixa-planos_home h2 {
-       font-size: 40px;
-       margin-bottom: 60px;
-    }
+.caixa-servico_home p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+    max-width: 110px;
+}
 
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        width: 270px;
-        height: 300px;
-    }
+.caixa-servico_home p img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
 
-    .planos img {
-        width: 200px;
-    }
+.caixa-esquerda {
+    border-left: 0.5px solid #fff;
+    border-right: 0.5px solid #fff;
+}
 
-    .planos h3 {
-        font-size: 30px;
-    }
+.caixa-direita {
+    border-right: 0.5px solid #fff;
+}
 
-    .planos p {
-        font-size: 30px;
-    }
-    .planos button{
-        font-size: 20px;
-        margin-top: 15px;
-    }
-    .sobrenos-home{
-    max-width: none;
-    }
-    .sobrenos-home img{
-        width: 40%;
-    }
-    .baixo{
-        gap: 130px;
-    
+/*-------------------------------SOBRE NÓS HOME----------------------------------- */
+.sobrenos-home {
+    display: flex;
+    flex-direction: column;
+}
 
-    }
-    
+.sobrenos-home img {
+    width: 250px;
+    margin: 20px 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.text_sobrenos {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 3.5px solid #6E07DC;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.text_sobrenos button {
+    margin-top: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f26b2b;
+    color: #fff;
+}
+
+/* --------------------------------------PLANOS-------------------------------------- */
+.laranja {
+    color: #f26807;
+}
+.caixa-planos_home {
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.caixa-planos_home h2 {
+    text-align: center;
+}
+
+.planos {
+    display: flex;
+    gap: 50px;
+    padding: 15px;
+    font-size: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.planos::-webkit-scrollbar {
+    display: none;
+}
+
+.planos h3 {
+    font-size: 25px;
+}
+
+.planos img {
+    width: 150px;
+    border-bottom: 1px solid #929292;
+}
+
+.planos button {
+    border: none;
+    border-radius: 10px;
+    background-color: #929292;
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 14px;
+}
+
+.plano_basico,
+.plano_avancado,
+.plano_premium {
+    min-width: 75%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 0.8px solid #8d8d8d;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    scroll-snap-align: center;
+}
+
+.plano_avancado h3 {
+    color: #6E07DC;
+}
+
+.plano_premium h3 {
+    color: #f26b2b;
+}
+
+/*----------------------------------------- BAIXO / APP -----------------------------------------*/
+.baixo {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.baixe_app img {
+    width: 250px;
+    padding: 15px;
 }
 
 
 
-@media(min-width:1400px) {
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        width: 300px;
-        height: 400px;
-    }
-    .text_sobrenos{
-        width: 400px;
-        height: 260px;
-        font-size: 22px;
-    }
-    .text_sobrenos button{
-        margin-top: 14px;
-        font-size: 20px;
-        padding: 8px;
-    }
-}
+
+/*--------------------------------------------footer--------------------------------------*/
 .footer {
     background-color: #999;
     color: white;
@@ -520,11 +349,167 @@ a{
     font-size: 12px;
 }
 
-/* MOBILE */
+
+/*responsivos*/
+
+/*--------------RESPONSIVO 500PX---------------*/
+@media (min-width: 500px) {
+    .sobrenos-home img {
+        width: 300px;
+    }
+
+    .text_sobrenos {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .baixe_app img {
+        margin-top: 10px;
+    }
+}
+
+/*--------------RESPONSIVO 700PX---------------*/
+@media (min-width: 700px) {
+    .caixa-servico_home {
+        width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .caixa-servico_home>div {
+        width: 150px;
+        text-align: center;
+        border-left: 1px solid #fff;
+    }
+
+    .planos {
+        justify-content: center;
+        overflow-x: visible;
+        gap: 20px;
+    }
+
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        min-width: auto;
+        width: 190px;
+    }
+
+    .sobrenos-home {
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        max-width: 1000px;
+        margin: 40px auto;
+        flex-direction: row;
+    }
+
+    .sobrenos-home img {
+        width: 360px;
+    }
+
+    .text_sobrenos {
+        width: 290px;
+        font-size: 17px;
+        padding: 18px;
+    }
+
+    .text_sobrenos button {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+
+/*--------------RESPONSIVO 1000PX---------------*/
+@media(min-width:1000px) {
+    .caixa-servico_home {
+        width: 90%;
+    }
+
+    .caixa-servico_home>div {
+        width: 20%;
+    }
+
+    .caixa-servico_home p {
+        font-size: 15px;
+    }
+
+    .caixa-servico_home p img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .caixa-planos_home {
+        padding: 100px;
+        margin-top: -5px
+    }
+    .caixa-planos_home h2 {
+       font-size: 40px;
+       margin-bottom: 60px;
+    }
+
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        width: 270px;
+        height: 300px;
+    }
+
+    .planos img {
+        width: 200px;
+    }
+
+    .planos h3 {
+        font-size: 30px;
+    }
+
+    .planos p {
+        font-size: 30px;
+    }
+    .planos button{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .sobrenos-home{
+    max-width: none;
+    }
+    .sobrenos-home img{
+        width: 40%;
+    }
+   
+}
+
+
+
+/*--------------RESPONSIVO 1400PX---------------*/
+@media(min-width:1400px) {
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        width: 300px;
+        height: 400px;
+    }
+    .text_sobrenos{
+        width: 400px;
+        height: 260px;
+        font-size: 22px;
+    }
+    .text_sobrenos button{
+        margin-top: 14px;
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+
+/*-----------------footer MOBILE ------------------------*/
 @media (max-width: 500px) {
     .footer-conteudo {
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
         gap: 25px;
     }
@@ -536,17 +521,16 @@ a{
 
     .footer-logo img {
         width: 210px;
+        
     }
 
-    .footer-redes {
-        text-align: left;
-    }
 
     .icones-redes {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .icones-redes img {
+        
         width: 38px;
         height: 38px;
     }
@@ -557,6 +541,16 @@ a{
     }
 }
 
+/*--------------------------------------------------------ANIMAÇÕES------------------------*/
+
+/* mobile mais suave */
+@media (max-width: 500px) {
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        transform: translateY(-40px);
+    }
+}
 /* 🔥 ÚNICA ALTERAÇÃO */
 .btn-plano {
     display: none !important;
@@ -629,12 +623,4 @@ a{
     transition-delay: 0.8s;
 }
 
-/* mobile mais suave */
-@media (max-width: 500px) {
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        transform: translateY(-40px);
-    }
-}
 

@@ -1,4 +1,12 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BASE */
+body {
+    background-color: #262626;
+    font-fa*{
     padding: 0;
     margin: 0;
 }
@@ -201,4 +209,5 @@ body{
  
  
  
- 
+ mily: Arial, Helvetica, sans-serif;
+}
