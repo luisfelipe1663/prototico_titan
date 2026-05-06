@@ -207,9 +207,16 @@ a{
 }
 /* --------------------------------------PLANOS-------------------------------------- */
 /* PLANOS */
+
 .planos h3 {
     font-size: 25px;
 }
+  .plano_avancado h3{
+        color: #9747FF;
+    }
+     .plano_premium h3{
+        color: #F26807;
+     }
 
 .laranja {
     color: #f26807;
@@ -221,11 +228,14 @@ a{
     padding: 20px 0;
     overflow: hidden;
 }
+.caixa-planos_home img{
+    width: 150px;
+    border-bottom: solid 1px #262626;
+}
 
 .caixa-planos_home h2 {
     text-align: center;
 }
-
 .planos-wrapper {
     width: 100%;
     overflow: hidden;
@@ -233,7 +243,7 @@ a{
 
 .planos {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 15px;
     font-size: 20px;
 }
@@ -289,6 +299,7 @@ a{
         /* espaço lateral inteligente */
         padding: 20px calc((100vw - 310px) / 2) 30px;
     }
+  
 
     .planos::-webkit-scrollbar {
         display: none;
@@ -320,7 +331,7 @@ a{
     .plano_basico,
     .plano_avancado,
     .plano_premium {
-        width: 190px;
+        width: 200px;
         min-width: auto;
     }
 
@@ -489,6 +500,9 @@ a{
     .sobrenos-home img{
         width: 40%;
     }
+    .planos{
+        gap:30px;
+    }
    
 }
 
@@ -619,4 +633,56 @@ a{
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.8s;
+}
+
+/*LOGIN--------------------------*/
+.conteudo-login{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.login{
+   font-weight: bold;
+    font-size: 40px;
+}
+.conteudo-login button{
+    font-size: 15px;
+    color: #fff;
+     font-weight: bold;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF8248;
+   
+}
+.continuar-com{
+    margin: 10px;
+    border: solid 3px #F26807;
+    border-radius: 20px;
+    padding: 10px;
+     padding-left: 45px;
+    padding-right: 45px;
+}
+.email{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.caixa-login{
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-left: 130px;
+    padding-right: 130px;
+    border-radius: 20px;
+    border: solid 3px #f26807;
+}
+.sem-conta{ 
+    margin-top: 70px;
+}
+.cadastro{
+    margin-top: 20px;
 }
