@@ -157,6 +157,13 @@ a{
     width: 45px;
     height: 45px;
     object-fit: contain;
+   
+}
+.caixa-servico_home img{
+     background: #1f1f1f;
+     padding:3px;
+    border-radius:10px;
+
 }
 
 .caixa-esquerda {
@@ -198,42 +205,55 @@ a{
     background-color: #f26b2b;
     color: #fff;
 }
-
 /* --------------------------------------PLANOS-------------------------------------- */
+/* PLANOS */
+.planos h3 {
+    font-size: 25px;
+}
+
 .laranja {
     color: #f26807;
 }
+
 .caixa-planos_home {
     background-color: #fff;
     margin-top: 50px;
     padding: 20px 0;
+    overflow: hidden;
 }
 
 .caixa-planos_home h2 {
     text-align: center;
 }
 
+.planos-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 .planos {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     padding: 15px;
     font-size: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
 }
 
-.planos::-webkit-scrollbar {
-    display: none;
-}
-
-.planos h3 {
-    font-size: 25px;
-}
-
-.planos img {
-    width: 150px;
-    border-bottom: 1px solid #929292;
+.plano_basico,
+.plano_avancado,
+.plano_premium {
+    height: 300px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    border-radius: 30px;
+    border: 3px solid #8d8d8d;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
 }
 
 .planos button {
@@ -245,33 +265,69 @@ a{
     padding: 8px 14px;
 }
 
-.plano_basico,
-.plano_avancado,
-.plano_premium {
-    min-width: 75%;
-    height: 300px;
-    flex-shrink: 0;
-    border-radius: 30px;
-    border: 0.8px solid #8d8d8d;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    scroll-snap-align: center;
+/* MOBILE - CARROSSEL */
+@media (max-width: 700px) {
+
+    .caixa-planos_home {
+        overflow: hidden;
+    }
+
+    .planos-wrapper {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .planos {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+        gap: 24px;
+
+        /* espaço lateral inteligente */
+        padding: 20px calc((100vw - 310px) / 2) 30px;
+    }
+
+    .planos::-webkit-scrollbar {
+        display: none;
+    }
+
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        width: 270px;
+        min-width: 270px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .btn-plano {
+        display: none;
+    }
 }
 
-.plano_avancado h3 {
-    color: #6E07DC;
-}
+/* DESKTOP - NORMAL */
+@media (min-width: 700px) {
 
-.plano_premium h3 {
-    color: #f26b2b;
-}
+    .planos {
+        justify-content: center;
+        overflow-x: visible;
+        scroll-snap-type: none;
+    }
 
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        width: 190px;
+        min-width: auto;
+    }
+
+    .btn-plano {
+        display: none;
+    }
+}
 /*----------------------------------------- BAIXO / APP -----------------------------------------*/
 .baixo {
     margin: 50px;
@@ -382,20 +438,6 @@ a{
         text-align: center;
         border-left: 1px solid #fff;
     }
-
-    .planos {
-        justify-content: center;
-        overflow-x: visible;
-        gap: 20px;
-    }
-
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        min-width: auto;
-        width: 190px;
-    }
-
     .sobrenos-home {
         align-items: center;
         justify-content: center;
@@ -441,37 +483,6 @@ a{
         object-fit: contain;
     }
 
-    .caixa-planos_home {
-        padding: 100px;
-        margin-top: -5px
-    }
-    .caixa-planos_home h2 {
-       font-size: 40px;
-       margin-bottom: 60px;
-    }
-
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        width: 270px;
-        height: 300px;
-    }
-
-    .planos img {
-        width: 200px;
-    }
-
-    .planos h3 {
-        font-size: 30px;
-    }
-
-    .planos p {
-        font-size: 30px;
-    }
-    .planos button{
-        font-size: 20px;
-        margin-top: 15px;
-    }
     .sobrenos-home{
     max-width: none;
     }
@@ -485,12 +496,6 @@ a{
 
 /*--------------RESPONSIVO 1400PX---------------*/
 @media(min-width:1400px) {
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        width: 300px;
-        height: 400px;
-    }
     .text_sobrenos{
         width: 400px;
         height: 260px;
@@ -543,14 +548,7 @@ a{
 
 /*--------------------------------------------------------ANIMAÇÕES------------------------*/
 
-/* mobile mais suave */
-@media (max-width: 500px) {
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        transform: translateY(-40px);
-    }
-}
+
 /* 🔥 ÚNICA ALTERAÇÃO */
 .btn-plano {
     display: none !important;
@@ -622,5 +620,3 @@ a{
     transform: translateY(0);
     transition-delay: 0.8s;
 }
-
-
