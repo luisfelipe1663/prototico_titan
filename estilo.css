@@ -176,6 +176,16 @@ a{
 }
 
 /*-------------------------------SOBRE NÓS HOME----------------------------------- */
+.titulo-sobrenos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.cor-sobrenos{
+    color: #F26807;
+}
+
 .sobrenos-home {
     display: flex;
     flex-direction: column;
@@ -354,7 +364,57 @@ a{
 
 
 
-
+/*LOGIN--------------------------*/
+.conteudo-login{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.login{
+   font-weight: bold;
+    font-size: 40px;
+}
+.conteudo-login button{
+    font-size: 15px;
+    color: #fff;
+     font-weight: bold;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FF8248;
+   
+}
+.continuar-com{
+    margin: 10px;
+    border: solid 3px #F26807;
+    border-radius: 20px;
+    padding: 10px;
+     padding-left: 45px;
+    padding-right: 45px;
+}
+.email{
+  margin-top: 10px;
+  font-size: 12px;
+}
+.caixa-login{
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-left: 130px;
+    padding-right: 130px;
+    border-radius: 20px;
+    border: solid 3px #f26807;
+}
+.sem-conta{ 
+    margin-top: 70px;
+}
+.cadastro{
+    margin-top: 20px;
+}
 /*--------------------------------------------footer--------------------------------------*/
 .footer {
     background-color: #999;
@@ -634,55 +694,15 @@ a{
     transform: translateY(0);
     transition-delay: 0.8s;
 }
+/*-------------------------ANIMAÇÃO SERVIÇO*------------------------------*/
+/* ANIMAÇÃO SERVIÇOS */
+.animar-servico {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
 
-/*LOGIN--------------------------*/
-.conteudo-login{
-    margin-top: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-.login{
-   font-weight: bold;
-    font-size: 40px;
-}
-.conteudo-login button{
-    font-size: 15px;
-    color: #fff;
-     font-weight: bold;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 20px;
-    border: none;
-    background-color: #FF8248;
-   
-}
-.continuar-com{
-    margin: 10px;
-    border: solid 3px #F26807;
-    border-radius: 20px;
-    padding: 10px;
-     padding-left: 45px;
-    padding-right: 45px;
-}
-.email{
-  margin-top: 10px;
-  font-size: 12px;
-}
-.caixa-login{
-    margin-bottom: 10px;
-    padding: 15px;
-    padding-left: 130px;
-    padding-right: 130px;
-    border-radius: 20px;
-    border: solid 3px #f26807;
-}
-.sem-conta{ 
-    margin-top: 70px;
-}
-.cadastro{
-    margin-top: 20px;
+.animar-servico.ativo {
+    opacity: 1;
+    transform: translateY(0);
 }
