@@ -46,7 +46,7 @@ a{
 }
 
 /* RESPONSIVO */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .menu-toggle {
         display: block;
         font-size: 30px;
@@ -285,70 +285,6 @@ a{
     padding: 8px 14px;
 }
 
-/* MOBILE - CARROSSEL */
-@media (max-width: 700px) {
-
-    .caixa-planos_home {
-        overflow: hidden;
-    }
-
-    .planos-wrapper {
-        width: 100%;
-        overflow: hidden;
-        padding: 0;
-    }
-
-    .planos {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-
-        gap: 24px;
-
-        /* espaço lateral inteligente */
-        padding: 20px calc((100vw - 310px) / 2) 30px;
-    }
-  
-
-    .planos::-webkit-scrollbar {
-        display: none;
-    }
-
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        width: 270px;
-        min-width: 270px;
-        flex-shrink: 0;
-        scroll-snap-align: center;
-    }
-
-    .btn-plano {
-        display: none;
-    }
-}
-
-/* DESKTOP - NORMAL */
-@media (min-width: 700px) {
-
-    .planos {
-        justify-content: center;
-        overflow-x: visible;
-        scroll-snap-type: none;
-    }
-
-    .plano_basico,
-    .plano_avancado,
-    .plano_premium {
-        width: 200px;
-        min-width: auto;
-    }
-
-    .btn-plano {
-        display: none;
-    }
-}
 /*----------------------------------------- BAIXO / APP -----------------------------------------*/
 .baixo {
     margin: 50px;
@@ -369,8 +305,6 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-  
 }
 .conteudo-login button{
     color: #fff;
@@ -379,9 +313,11 @@ a{
     border-radius: 5px;
     border: none;
     margin-bottom: 10px;
+    cursor: pointer;  
 }
 .login{
     margin-top: 50px;
+    margin-bottom: 100px;
       background: #262626;
     display: flex;
     flex-direction: column;
@@ -410,8 +346,18 @@ a{
     cursor: pointer;  
 }
 .sem-conta{
+    font-size: 12px;
     margin-top: 20px;
 }
+.email{
+    font-size: 10px;
+}
+.input-email{
+    padding: 2px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
 
 /*--------------------------------------------footer--------------------------------------*/
 .footer {
@@ -533,6 +479,9 @@ a{
         font-size: 15px;
         margin-top: 10px;
     }
+    .conteudo-login{
+        
+    }
 }
 
 /*--------------RESPONSIVO 1000PX---------------*/
@@ -567,8 +516,6 @@ a{
    
 }
 
-
-
 /*--------------RESPONSIVO 1400PX---------------*/
 @media(min-width:1400px) {
     .text_sobrenos{
@@ -582,8 +529,6 @@ a{
         padding: 8px;
     }
 }
-
-
 /*-----------------footer MOBILE ------------------------*/
 @media (max-width: 500px) {
     .footer-conteudo {
@@ -621,6 +566,70 @@ a{
     }
 }
 
+/* MOBILE - CARROSSEL */
+@media (max-width: 700px) {
+
+    .caixa-planos_home {
+        overflow: hidden;
+    }
+
+    .planos-wrapper {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .planos {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+        gap: 24px;
+
+        /* espaço lateral inteligente */
+        padding: 20px calc((100vw - 310px) / 2) 30px;
+    }
+  
+
+    .planos::-webkit-scrollbar {
+        display: none;
+    }
+
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        width: 270px;
+        min-width: 270px;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .btn-plano {
+        display: none;
+    }
+}
+
+/* DESKTOP - NORMAL */
+@media (min-width: 700px) {
+
+    .planos {
+        justify-content: center;
+        overflow-x: visible;
+        scroll-snap-type: none;
+    }
+
+    .plano_basico,
+    .plano_avancado,
+    .plano_premium {
+        width: 200px;
+        min-width: auto;
+    }
+
+    .btn-plano {
+        display: none;
+    }
+}
 /*--------------------------------------------------------ANIMAÇÕES------------------------*/
 
 
