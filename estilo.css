@@ -363,58 +363,56 @@ a{
 }
 
 
-
 /*LOGIN--------------------------*/
 .conteudo-login{
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: #fff;
-}
-.login{
-   font-weight: bold;
-    font-size: 40px;
+    justify-content: center;
+    
+  
 }
 .conteudo-login button{
-    font-size: 15px;
     color: #fff;
-     font-weight: bold;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 20px;
+    background: #F26807;
+    padding: 5px 70px;
+    border-radius: 5px;
     border: none;
-    background-color: #FF8248;
-   
-}
-.continuar-com{
-    margin: 10px;
-    border: solid 3px #F26807;
-    border-radius: 20px;
-    padding: 10px;
-     padding-left: 45px;
-    padding-right: 45px;
-}
-.email{
-  margin-top: 10px;
-  font-size: 12px;
-}
-.caixa-login{
     margin-bottom: 10px;
-    padding: 15px;
-    padding-left: 130px;
-    padding-right: 130px;
-    border-radius: 20px;
-    border: solid 3px #f26807;
 }
-.sem-conta{ 
-    margin-top: 70px;
+.login{
+    margin-top: 50px;
+      background: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border:solid 1px #F26807;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 10px;
 }
-.cadastro{
+.titulo-login{
+    font-size: 30px;
+}
+.continuar-com {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f26807;
+    border-radius: 12px;
+    background: #262626;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;  
+}
+.sem-conta{
     margin-top: 20px;
 }
+
 /*--------------------------------------------footer--------------------------------------*/
 .footer {
     background-color: #999;
@@ -496,6 +494,9 @@ a{
 
 /*--------------RESPONSIVO 700PX---------------*/
 @media (min-width: 700px) {
+    .titulo-sobrenos{
+        margin-top: 25px;
+    }
     .caixa-servico_home {
         width: 700px;
         margin: 0 auto;
